@@ -1,0 +1,142 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos na vertical */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+    background-image: url('assets/mar2.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir a página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+/* Estilo para os feriados */
+.holiday {
+    background-color: #401374; /* Cor de fundo para feriados */
+    color: white; /* Cor do texto para feriados */
+    font-weight: bold; /* Negrito para feriados */
+    border-radius: 50%; /* Bordas arredondadas */
+}
+
+/* Estilos para o contêiner principal do calendário */
+.calendar {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff; /* Cor de fundo para o calendário */
+    margin-bottom: 40px; /* Espaço entre o calendário e o formulário */
+}
+
+/* Estilos para o cabeçalho do calendário */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a16afa;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px; /* Tamanho da fonte reduzido */
+}
+
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #eee;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calendar-weekdays div {
+    font-weight: bold;
+    color: #333;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calendar-days div {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.calendar-days div:hover {
+    background-color: #f0f0f0;
+}
+
+.current-day {
+    background-color: #a98aff;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Estilos para o formulário de observação */
+.observation-form {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 40px; /* Espaço entre o formulário e o calendário */
+}
+
+.observation-form h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.observation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.observation-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.observation-form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.observation-form button {
+    padding: 10px;
+    border: none;
+    background-color: #a16afa;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.observation-form button:hover {
+    background-color: #8c4eeb; /* Cor de fundo ao passar o mouse */
+}
